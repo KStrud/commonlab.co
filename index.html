@@ -488,9 +488,10 @@
     }
     .orbit-ring text {
       font-family: 'Rock Salt', cursive;
-      font-size: 13px;
+      font-size: 16px;
       fill: var(--black);
-      letter-spacing: 8px;
+      letter-spacing: 6px;
+      font-weight: 700;
     }
 
 
@@ -538,7 +539,7 @@
 </head>
 <body>
 
-  <nav id="main-nav" class="expanded">
+  <nav id="main-nav">
     <div class="logo">
       <span class="logo-short">T.C.L</span>
       <span class="logo-full">The Common Lab</span>
@@ -659,19 +660,7 @@
   </footer>
 
   <script>
-    const nav = document.getElementById('main-nav');
     const hero = document.querySelector('.hero');
-
-    function updateNav() {
-      if (window.scrollY > 0) {
-        nav.classList.remove('expanded');
-      } else {
-        nav.classList.add('expanded');
-      }
-    }
-
-    window.addEventListener('scroll', updateNav, { passive: true });
-    updateNav();
   </script>
 
 
